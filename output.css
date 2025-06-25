@@ -14,6 +14,9 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-amber-100: oklch(96.2% 0.059 95.617);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-yellow-50: oklch(98.7% 0.026 102.212);
@@ -230,11 +233,50 @@
   .block {
     display: block;
   }
+  .size-0 {
+    width: calc(var(--spacing) * 0);
+    height: calc(var(--spacing) * 0);
+  }
+  .size-10 {
+    width: calc(var(--spacing) * 10);
+    height: calc(var(--spacing) * 10);
+  }
+  .size-50 {
+    width: calc(var(--spacing) * 50);
+    height: calc(var(--spacing) * 50);
+  }
+  .size-60 {
+    width: calc(var(--spacing) * 60);
+    height: calc(var(--spacing) * 60);
+  }
+  .size-70 {
+    width: calc(var(--spacing) * 70);
+    height: calc(var(--spacing) * 70);
+  }
+  .size-80 {
+    width: calc(var(--spacing) * 80);
+    height: calc(var(--spacing) * 80);
+  }
+  .size-100 {
+    width: calc(var(--spacing) * 100);
+    height: calc(var(--spacing) * 100);
+  }
+  .size-150 {
+    width: calc(var(--spacing) * 150);
+    height: calc(var(--spacing) * 150);
+  }
+  .size-200 {
+    width: calc(var(--spacing) * 200);
+    height: calc(var(--spacing) * 200);
+  }
   .h-1\/7 {
     height: calc(1/7 * 100%);
   }
   .h-30 {
     height: calc(var(--spacing) * 30);
+  }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
   }
   .h-dvw {
     height: 100dvw;
@@ -287,6 +329,9 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
   .w-full {
     width: 100%;
   }
@@ -298,6 +343,15 @@
   }
   .min-w-100 {
     min-width: calc(var(--spacing) * 100);
+  }
+  .bg-amber-100 {
+    background-color: var(--color-amber-100);
+  }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
+  }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
   }
   .bg-amber-400 {
     background-color: var(--color-amber-400);
