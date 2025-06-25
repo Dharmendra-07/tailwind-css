@@ -4,4 +4,8 @@
   --breakpoint-md:900px;
   --breakpoint-lg:1000px;
   --breakpoint-big:1300px;
+  --padding-30: 500px;
+  --padding-wrapper:10px;
+  --padding-c:50px;
+  --padding-c-sm:20px
 }
