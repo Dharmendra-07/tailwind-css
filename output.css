@@ -208,6 +208,9 @@
   .block {
     display: block;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .bg-amber-400 {
     background-color: var(--color-amber-400);
   }
