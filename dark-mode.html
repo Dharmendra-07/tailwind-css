@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="root" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dark Mode with Tailwind CSS</title>
   <link rel="stylesheet" href="./output.css">
+  <script>
+    function changeMode() {
+      const root = document.getElementById('root');
+      if (root.classList.contains('dark')) {
+        root.classList.remove('dark');
+        console.log('Switched to Light Mode');
+      } else {
+        root.classList.add('dark');
+        console.log('Applied Dark Mode');
+      }
+    }
+  </script>
 </head>
 <body class="bg-white text-black dark:bg-black dark:text-white">
   <div>
-    <h1 class="text-xl">
+    <button 
+      class="border border-slate-400 m-2 p-2 rounded hover:bg-slate-800 dark:bg-slate-800 hover:text-white"
+      onclick="changeMode()">
+      Apply Dark Mode
+    </button>
+    <h1 class="text-4xl dark:text-white">
       Dark Mode test with Tailwind CSS
     </h1>
     <p class="text-4xl">
